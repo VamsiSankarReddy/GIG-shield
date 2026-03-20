@@ -95,36 +95,50 @@ Automatic claims activate when:
 ## System Workflow
 
 ```
-1. Worker Signs Up
-   ├─ Complete KYC (instant mobile verification)
-   ├─ Link wallet & bank account
-   └─ Select coverage zones (home delivery area)
+## 🔄 System Workflow
 
-2. AI Risk Assessment (Continuous)
-   ├─ Ingest weather API (OpenWeatherMap), AQI data (CPCB), govt notifications
-   ├─ Calculate real-time risk score per zone
-   └─ Store risk vectors for pattern analysis
+1. **User Onboarding**
 
-3. Weekly Premium Deduction
-   ├─ Calculate premium based on selected zones + historical risk
-   ├─ Auto-deduct from wallet each Sunday
-   └─ Notify worker of coverage activation
+   * Worker signs up and verifies identity
+   * Selects delivery location and coverage area
+   * Links wallet/payment method
 
-4. External Event Occurs (Rain, Pollution, Curfew)
-   ├─ AI detects parametric threshold breach
-   ├─ Validate trigger against multiple data sources
-   └─ Generate claim record (immutable)
+2. **AI Risk Assessment**
 
-5. Automatic Payout
-   ├─ Verify worker eligibility (active coverage, no fraud flags)
-   ├─ Calculate payout amount (zone-based, tiered)
-   ├─ Initiate blockchain transaction
-   └─ Send SMS/Push confirmation to worker
+   * System analyzes location using:
 
-6. Fraud Check (Post-Payout)
-   ├─ Run anomaly detection models
-   ├─ Flag high-risk claims for review
-   └─ Suspend coverage if fraud confirmed
+     * Weather data
+     * Pollution (AQI)
+     * Historical disruption patterns
+   * Generates a dynamic **risk score**
+
+3. **Weekly Premium Activation**
+
+   * Premium is calculated based on risk level
+   * Automatically deducted weekly
+   * Coverage becomes active
+
+4. **Disruption Detection**
+
+   * System continuously monitors:
+
+     * Rainfall levels
+     * AQI thresholds
+     * Government restrictions
+   * Detects when a predefined trigger condition is met
+
+5. **Automated Claim Processing**
+
+   * Claim is automatically generated
+   * Validated using multiple data sources
+   * Fraud checks are performed
+
+6. **Instant Payout**
+
+   * Compensation is calculated
+   * Amount is credited to the worker (simulated)
+
+---
 ```
 
 ---
