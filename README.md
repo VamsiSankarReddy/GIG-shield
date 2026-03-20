@@ -95,30 +95,30 @@ Automatic claims activate when:
 ## System Workflow
 
 ```
-## 🔄 System Workflow
+🔄 System Workflow
 
-1. **User Onboarding**
+1. User Onboarding
 
    * Worker signs up and verifies identity
    * Selects delivery location and coverage area
    * Links wallet/payment method
 
-2. **AI Risk Assessment**
+2. AI Risk Assessment
 
    * System analyzes location using:
 
      * Weather data
      * Pollution (AQI)
      * Historical disruption patterns
-   * Generates a dynamic **risk score**
+   * Generates a dynamic risk score
 
-3. **Weekly Premium Activation**
+3. Weekly Premium Activation
 
    * Premium is calculated based on risk level
    * Automatically deducted weekly
    * Coverage becomes active
 
-4. **Disruption Detection**
+4. Disruption Detection
 
    * System continuously monitors:
 
@@ -127,13 +127,13 @@ Automatic claims activate when:
      * Government restrictions
    * Detects when a predefined trigger condition is met
 
-5. **Automated Claim Processing**
+5. Automated Claim Processing
 
    * Claim is automatically generated
    * Validated using multiple data sources
    * Fraud checks are performed
 
-6. **Instant Payout**
+6. Instant Payout
 
    * Compensation is calculated
    * Amount is credited to the worker (simulated)
@@ -271,7 +271,7 @@ GigShield transforms income protection for gig workers from a reactive, bureaucr
 - **API Documentation**: [Link to API docs](#)
 - **GitHub Repository**: [github.com/gigshield](#)
 - **Pitch Deck**: [Link to presentation](#)
-- **Contact**: team@gigshield.io
+- **Contact**: [Team mail to add](#)
 
 ---
 
