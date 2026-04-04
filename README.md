@@ -95,50 +95,36 @@ Automatic claims activate when:
 ## System Workflow
 
 ```
-🔄 System Workflow
+1. Worker Signs Up
+   ├─ Complete KYC (instant mobile verification)
+   ├─ Link wallet & bank account
+   └─ Select coverage zones (home delivery area)
 
-1. User Onboarding
+2. AI Risk Assessment (Continuous)
+   ├─ Ingest weather API (OpenWeatherMap), AQI data (CPCB), govt notifications
+   ├─ Calculate real-time risk score per zone
+   └─ Store risk vectors for pattern analysis
 
-   * Worker signs up and verifies identity
-   * Selects delivery location and coverage area
-   * Links wallet/payment method
+3. Weekly Premium Deduction
+   ├─ Calculate premium based on selected zones + historical risk
+   ├─ Auto-deduct from wallet each Sunday
+   └─ Notify worker of coverage activation
 
-2. AI Risk Assessment
+4. External Event Occurs (Rain, Pollution, Curfew)
+   ├─ AI detects parametric threshold breach
+   ├─ Validate trigger against multiple data sources
+   └─ Generate claim record (immutable)
 
-   * System analyzes location using:
+5. Automatic Payout
+   ├─ Verify worker eligibility (active coverage, no fraud flags)
+   ├─ Calculate payout amount (zone-based, tiered)
+   ├─ Initiate blockchain transaction
+   └─ Send SMS/Push confirmation to worker
 
-     * Weather data
-     * Pollution (AQI)
-     * Historical disruption patterns
-   * Generates a dynamic risk score
-
-3. Weekly Premium Activation
-
-   * Premium is calculated based on risk level
-   * Automatically deducted weekly
-   * Coverage becomes active
-
-4. Disruption Detection
-
-   * System continuously monitors:
-
-     * Rainfall levels
-     * AQI thresholds
-     * Government restrictions
-   * Detects when a predefined trigger condition is met
-
-5. Automated Claim Processing
-
-   * Claim is automatically generated
-   * Validated using multiple data sources
-   * Fraud checks are performed
-
-6. Instant Payout
-
-   * Compensation is calculated
-   * Amount is credited to the worker (simulated)
-
----
+6. Fraud Check (Post-Payout)
+   ├─ Run anomaly detection models
+   ├─ Flag high-risk claims for review
+   └─ Suspend coverage if fraud confirmed
 ```
 
 ---
@@ -271,7 +257,7 @@ GigShield transforms income protection for gig workers from a reactive, bureaucr
 - **API Documentation**: [Link to API docs](#)
 - **GitHub Repository**: [github.com/gigshield](#)
 - **Pitch Deck**: [Link to presentation](#)
-- **Contact**: [Team mail to add](#)
+- **Contact**: team@gigshield.io
 
 ---
 
